@@ -18,7 +18,7 @@ component contract or in a recorded interaction contract.
 
 ## Proven
 
-Twelve theorems, all proved in full at the head recorded
+Thirteen theorems, all proved in full at the head recorded
 in the completion section, zero sorries, family gate cold,
 printed axioms within the standard set. Names are the
 single word theorem names in the proof folder.
@@ -41,7 +41,11 @@ single word theorem names in the proof folder.
    on that axis.
 6. Compounding (compound): the gap of a composition is at
    most the sum of the component gaps and the interaction
-   gap.
+   gap. The bound is certified tight (tight): when no
+   component and no interaction runs a surplus over its
+   share, the gap of the composition is exactly that sum;
+   any strictness in the general bound is exactly the
+   surplus that masks a gap.
 7. Monotonicity (monotone): growing any component's
    projection never grows the whole's gap.
 8. Localization (localizes): a gap in a whole implies a
@@ -126,10 +130,10 @@ system whose behavior can be recorded.
 ## Completion
 
 Landed: the proof folder carries the core file with
-twelve theorems and the controls file with three
+thirteen theorems and the controls file with three
 controls; the family gate passes cold under Lean 4.19.0
 with warnings as errors; printed axioms across all
-fifteen audited declarations are within the set of
+sixteen audited declarations are within the set of
 propext, choice, and the quotient soundness axiom, and
 three declarations depend on no axioms at all. The
 definitions file defines every model term at implementer

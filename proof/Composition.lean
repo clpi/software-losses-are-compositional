@@ -126,6 +126,23 @@ theorem compound (f : Nat → Nat) (s1 si s2 : Nat)
   rw [split f a inter b]
   omega
 
+/-- The compounding bound is tight: when no component and
+    no interaction runs a surplus over its share, the gap
+    of the composition is exactly the sum of the component
+    gaps and the interaction gap. The bound is therefore
+    attained, not merely safe: it is the exact value at the
+    no surplus point, and any strictness in the general
+    bound is exactly the surplus that masks a gap. -/
+theorem tight (f : Nat → Nat) (s1 si s2 : Nat)
+    (a inter b : List Nat)
+    (h1 : project f a ≤ s1) (hi : project f inter ≤ si)
+    (h2 : project f b ≤ s2) :
+    gap f (s1 + si + s2) (a ++ inter ++ b)
+      = gap f s1 a + gap f si inter + gap f s2 b := by
+  unfold gap
+  rw [split f a inter b]
+  omega
+
 /-- The gap is monotone in each component: enlarging any one
     component's projection, the rest held fixed, never
     enlarges the gap of the whole. -/
@@ -231,6 +248,7 @@ end Composition
 #print axioms Composition.composed
 #print axioms Composition.wholefree
 #print axioms Composition.compound
+#print axioms Composition.tight
 #print axioms Composition.monotone
 #print axioms Composition.localizes
 #print axioms Composition.finite

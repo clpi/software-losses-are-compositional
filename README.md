@@ -20,7 +20,7 @@ site, not at the instance.
   the executable eight step method with its measures.
 - The definitions file: every term of the model at
   implementer resolution, tied to its Lean counterpart.
-- The proof folder: the Lean core (twelve theorems), the
+- The proof folder: the Lean core (thirteen theorems), the
   standing controls (three proved negations over concrete
   counterexamples), the family check gate, and its log.
   Lean 4.19.0; zero sorries; warnings as errors; printed
