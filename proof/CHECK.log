@@ -1,0 +1,18 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Composition.additive' depends on axioms: [propext]
+'Composition.projected' depends on axioms: [propext]
+'Composition.split' depends on axioms: [propext]
+'Composition.gapfree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Composition.composed' depends on axioms: [propext, Quot.sound]
+'Composition.wholefree' depends on axioms: [propext, Quot.sound]
+'Composition.compound' depends on axioms: [propext, Quot.sound]
+'Composition.monotone' depends on axioms: [propext, Quot.sound]
+'Composition.localizes' depends on axioms: [propext, Quot.sound]
+'Composition.finite' depends on axioms: [propext]
+'Composition.sound' does not depend on any axioms
+'Composition.allsound' depends on axioms: [propext, Quot.sound]
+'Composition.controlone' does not depend on any axioms
+'Composition.controltwo' depends on axioms: [propext, Quot.sound]
+'Composition.controlthree' does not depend on any axioms
+Axiom subset check passed: printed axioms are a subset of {propext, Classical.choice, Quot.sound}
+Axioms printed: Classical.choice Quot.sound propext 
